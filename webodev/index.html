@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spor Haberleri</title>
+    <link rel="stylesheet" type="text/css" href="public/css/styles.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+
+        header{
+            background-color: #ff0000;
+            color: #fff;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        
+        nav {
+            background-color: #2980b9; 
+            padding: 0.5em 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1em;
+            padding: 0.5em 1em;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease; 
+        }
+
+        nav a:hover {
+            background-color: #2c3e50; 
+            color: #fff; 
+        }
+
+        section {
+            padding: 1em;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        article {
+            flex: 1 1 calc(33.333% - 1em);
+            margin-bottom: 1em;
+            background-color: #fff;
+            padding: 1em;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        article:hover {
+            transform: scale(1.02);
+        }
+
+        article h2 {
+            color: #2c3e50;
+            margin-bottom: 0.5em;
+        }
+
+        article p {
+            color: #7f8c8d;
+            margin-bottom: 1em;
+            line-height: 1.5;
+        }
+
+        article time {
+            color: #95a5a6;
+            font-style: italic;
+            display: block;
+            margin-top: 1em;
+        }
+
+        article img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 8px;
+        }
+
+        #slider {
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            margin-top: 1em;
+        }
+
+        .slide {
+            display: none;
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        
+
+        .slider-buttons {
+            text-align: center;
+            margin-top: 1em;
+        }
+
+        .slider-buttons button {
+            background-color: #2c3e50;
+            color: #fff;
+            border: none;
+            padding: 0.5em 1em;
+            margin: 0 0.5em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .slider-buttons button:hover {
+            background-color: #1a242f;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Spor Haberleri</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Ana Sayfa</a>
+        <a href="futbol.html">Futbol</a>
+        <a href="basketbol.html">Basketbol</a>
+        <a href="voleybol.html">Voleybol</a>
+        <a href="tenis.html">Tenis</a>
+    </nav>
+
+    <section id="slider">
+        <div class="slide">
+            <h2>Bülent Serttaş'ın tenis maçına gitmesi olay oldu.</h2>
+            <img src="public/images/bulent-tenis.jpg" alt="Slide 1">
+            <p>Bülent Serttaş'ı hedef gösteren bir twitter sayfasına Bülent Serttaş'tan cevap geldi. Serttaş'ın cevabı "Doğum günümdü" oldu.</p>
+        </div>
+        <div class="slide">
+            <h2>Milan Atalanta'ya kaybetti</h2>
+            <img src="public/images/milan.jpg" alt="Slide 2">
+            <p>
+                İtalya Kupası çeyrek final maçında Milan'ı deplasmanda 2-1 mağlup eden Atalanta, adını yarı finale yazdırdı.</p>
+                <p>
+                    TRT SPOR'dan canlı yayınlanan çeyrek final müsabakasında Serie A'da zirve takibini sürdüren Milan ile ligin güçlü ekiplerinden Atalanta kozlarını paylaştı.
+    
+    Ev sahibi Milan, 45. dakikada Rafa Leao’nun harika golüyle 1-0 öne geçti.
+                </p>
+                <p>
+                    Atalanta, 45+2'de Teun Koopmeiners'in nefis golüyle Milan'a yanıt verdi: 1-1.
+                    Konuk takım Atalanta, 59. dakikada Koopmeiners'in penaltıdan kaydettiiği golle 2-1 öne geçti.
+                    Kalan sürede başka gol olmadı ve maçı 2-1 kazanan Atalanta, İtalya Kupası'nda yarı final biletini cebine koydu.
+                    </p>
+                    <p>
+        </div>
+        <div class="slide">
+            <h2>Los Angeles derbisine LeBron James damgası</h2>
+            <img src="public/images/lebron.jpg" alt="Slide 2">
+            <p>LeBron James'in 25 sayı, 8 ribaunt ve 7 asistle oynadığı maçta Los Angeles Lakers, Los Angeles Clippers'ı 106-103 yendi.</p>
+            <p>Amerikan Basketbol Ligi'nde (NBA) Los Angeles Lakers, all-star yıldızı LeBron James'in öne çıktığı maçta Los Angeles Clippers'ı 106-103 mağlup etti.</p>
+            <p>Mücadelenin en skorer ismi olan James 25 sayı, 8 ribaunt ve 7 asist, Anthony Davis 22 sayı, 10 ribaunt ve 1 asistle galibiyete katkı verdi.
+    
+                Clippers'ta Paul George ve Ivica Zubac'ın 22'şer, Kawhi Leonard ve James Harden'ın 15'er sayılık katkıları mağlubiyeti önleyemedi.</p>        </div>
+                <div class="slide">
+                    <h2>Filenin Sultanları damga vurdu: Rüya Takıma Türkiye damgası!.</h2>
+                    <img src="public/images/sultan.jpg" alt="Slide 1">
+                    <p>En iyi pasör çapraz Melissa Vargas
+                        Rüya Takım en iyi pasar çapraz oylamasında Melissa Vargas rakiplerine fark atarak 1. sırada yer aldı. Vargas oylamada yüzde 40 oy alırken, Boskovic yüzde 23  ile 2. , Egonu ise yüzde 11 ile 3. sırda kendine yer buldu.
+                        
+                       <p> 1) Melissa Vargas / 1078 oy (40%) </p>
+                       <p> 2) Tijana Boskovic / 621 oy (23%)</p>
+                       <p> 3) Paola Egonu / 299 oy (11%)</p>
+                       <p> 4) Isabelle Haak / 147 oy (5%) </p>
+                       <p> 5) Ebrar Karakurt / 100 oy (4%)</p>
+                        <p>İşte 2023'ün Rüya Takımı;
+                            PASÖR: Joanna Wolosz
+                            PASÖR ÇAPRAZI: Melissa Vargas
+                            SMAÇÖR: Hande Baladın
+                            SMAÇÖR: Gabi Guimaraes
+                            ORTA OYUNCU: Eda Erdem
+                            ORTA OYUNCU: Ana Carol
+                            LİBERO: Gizem Örge</p>
+                </div>
+                <div class="slide">
+                    <h2>Galatasaray'ın Şampiyonlar Ligi'nin grubu belli oldu.</h2>
+                    <img src="public/images/galatasaray-cl.jpg" alt="Slide 1">
+                    <p>Galatasaray şampiyonlar ligi kurası belli oldu. Sarı kırmızılıların A grubundaki rakipleri Danimarka şampiyonu Kopenhag, Alman panzerleri Bayern Münih ve son yıllardır istediği ivmeyi yakalamayan İngilizlerin Kırmızı Şeytanları Manchester United oldu.</p>                </div>
+                
+      
+    </section>
+
+    <div class="slider-buttons">
+        <button onclick="prevSlide()">Önceki</button>
+        <button onclick="nextSlide()">Sonraki</button>
+    </div>
+
+    
+
+    <script>
+        window.onload = function () {
+            showSlide(0);
+        };
+
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.style.display = i === index ? 'block' : 'none';
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        setInterval(nextSlide,4000);
+    </script>
+</body>
+</html>
